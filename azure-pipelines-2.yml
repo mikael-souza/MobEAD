@@ -88,6 +88,6 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'docker-hub-mik431'
-    repository: 'mik431/demo:latest'
+    repository: 'mik431/demo'
     command: 'BuildAndPush'
     tags: 'latest'
