@@ -89,5 +89,5 @@ steps:
   inputs:
     containerRegistry: 'docker-hub-mik431'
     repository: 'mik431/demo:latest'
-    command: 'push'
+    command: 'BuildAndPush'
     tags: 'latest'
