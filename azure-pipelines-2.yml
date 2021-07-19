@@ -26,16 +26,16 @@ steps:
     #failOnStderr: false # Optional
 
 
-- task: SonarCloudPrepare@1
-  inputs:
-    SonarCloud: 'SONAR Analia'
-    organization: 'promove'
-    scannerMode: 'CLI'
-    configMode: 'manual'
-    cliProjectKey: 'analia'
-    cliProjectName: Analia
-    cliSources: '$(System.DefaultWorkingDirectory)'
-  continueOnError: true
+# - task: SonarCloudPrepare@1
+#   inputs:
+#     SonarCloud: 'SONAR Analia'
+#     organization: 'promove'
+#     scannerMode: 'CLI'
+#     configMode: 'manual'
+#     cliProjectKey: 'analia'
+#     cliProjectName: Analia
+#     cliSources: '$(System.DefaultWorkingDirectory)'
+#   continueOnError: true
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
@@ -57,13 +57,13 @@ steps:
     testAssemblyVer2: '$(Build.SourcesDirectory)/test**.js'
     
  
-- task: SonarCloudAnalyze@1
-  displayName: 'Run Code Analysis'
-  continueOnError: true
+# - task: SonarCloudAnalyze@1
+#   displayName: 'Run Code Analysis'
+#   continueOnError: true
 
-- task: SonarCloudPublish@1
-  displayName: 'Publish Quality Gate Result'
-  continueOnError: true
+# - task: SonarCloudPublish@1
+#   displayName: 'Publish Quality Gate Result'
+#   continueOnError: true
 
 # Publish code coverage results
 # Publish Cobertura or JaCoCo code coverage results from a build
