@@ -61,6 +61,8 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+
+
 # - task: SonarQubeAnalyze@4
 
 # - task: SonarQubePublish@4
