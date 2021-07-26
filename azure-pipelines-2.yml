@@ -59,7 +59,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      ll
+      tree
  
 # - task: SonarCloudAnalyze@1
 #   displayName: 'Run Code Analysis'
