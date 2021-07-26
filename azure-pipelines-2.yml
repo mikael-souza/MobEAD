@@ -55,7 +55,18 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
     testAssemblyVer2: '$(Build.SourcesDirectory)/test**.js'
-    
+
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo RAIZ
+      ls -a
+      
+      echo \MobEAD
+      ls ..\MobEAD\
+      
+      echo PRECOMPILEDWEB
+      ls PrecompiledWeb\MobEAD\
  
 # - task: SonarCloudAnalyze@1
 #   displayName: 'Run Code Analysis'
