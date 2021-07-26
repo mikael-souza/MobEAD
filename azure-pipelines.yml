@@ -61,7 +61,9 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-
+- task: CmdLine@2
+  inputs:
+    script: 'tree /F'
 
 # - task: SonarQubeAnalyze@4
 
