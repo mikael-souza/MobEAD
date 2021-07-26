@@ -59,14 +59,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      echo RAIZ
-      ls -a
-      
-      echo \MobEAD
-      ls ..\MobEAD\
-      
-      echo PRECOMPILEDWEB
-      ls PrecompiledWeb\MobEAD\
+      ls -lia
  
 # - task: SonarCloudAnalyze@1
 #   displayName: 'Run Code Analysis'
