@@ -55,11 +55,6 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
     testAssemblyVer2: '$(Build.SourcesDirectory)/test**.js'
-
-- task: CmdLine@2
-  inputs:
-    script: |
-      tree /F
  
 # - task: SonarCloudAnalyze@1
 #   displayName: 'Run Code Analysis'
