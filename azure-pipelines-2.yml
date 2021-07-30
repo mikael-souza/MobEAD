@@ -9,8 +9,6 @@ trigger:
 pool:
   vmImage: 'windows-latest'
 
-container: mcr.microsoft.com/windows/servercore:ltsc2019
-
 variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
